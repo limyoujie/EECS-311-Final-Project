@@ -1,6 +1,6 @@
 package data;
 import java.util.*;
-// This class maintains a sorted list of FlightDataNode
+// This class maintains a sorted list of FlightDataNode. It works by sorting the list of FlightDataNode every time a new node is added
 
 public class FlightDataList {
 	List<FlightDataNode> sortedList;

@@ -41,27 +41,27 @@ public class EdgeData {
 	}
 	
 	
-	public static void main(String[] args){
-		String line = null;
-		EdgeData test = new EdgeData();
-		try{
-			FileReader fileReader= new FileReader("fakedata.csv");
-			BufferedReader bufferedReader= new BufferedReader(fileReader);
-			while((line=bufferedReader.readLine())!=null){
-				String[] data = line.split(",");
-//				System.out.println(Arrays.toString(data));
-				test.addFlight(1000, data[0], Integer.valueOf(data[1]), Integer.valueOf(data[2]), Integer.valueOf(data[3]), Integer.valueOf(data[4]));
-			}
-		}
-		catch(FileNotFoundException ex){
-			System.out.println(
-					"Unable to open file");	
-		}
-		catch(IOException ex){
-			System.out.println("Error reading file");
-		}
-		
-		test.printEdge();
-		
-	}
+//	public static void main(String[] args){
+//		String line = null;
+//		EdgeData test = new EdgeData();
+//		try{
+//			FileReader fileReader= new FileReader("fakedata.csv");
+//			BufferedReader bufferedReader= new BufferedReader(fileReader);
+//			while((line=bufferedReader.readLine())!=null){
+//				String[] data = line.split(",");
+////				System.out.println(Arrays.toString(data));
+//				test.addFlight(1000, data[0], Integer.valueOf(data[1]), Integer.valueOf(data[2]), Integer.valueOf(data[3]), Integer.valueOf(data[4]));
+//			}
+//		}
+//		catch(FileNotFoundException ex){
+//			System.out.println(
+//					"Unable to open file");	
+//		}
+//		catch(IOException ex){
+//			System.out.println("Error reading file");
+//		}
+//		
+//		test.printEdge();
+//		
+//	}
 }
