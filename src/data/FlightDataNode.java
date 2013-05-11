@@ -23,5 +23,21 @@ public class FlightDataNode implements Comparable<FlightDataNode>{
 		else if (this.price==price) return 0;
 		else return 1;
 	}
+	public void print(){
+		System.out.println(model+" "+capacity+" "+booked+" Price: "+price);
+	}
+//	public static void main (String args []){
+//		FlightDataNode test[] = {new FlightDataNode(2343,1235,3456,4564),new FlightDataNode(123,1237565,34345356,625),new FlightDataNode(697,123445,3456,8),new FlightDataNode(224,2345,667,4568874),new FlightDataNode(989,4564,3456,1231)};
+//		List<FlightDataNode> testlist = Arrays.asList(test);
+//		for (int i =0; i<5;i++){
+//			testlist.get(i).print();
 
+//		}
+//		System.out.println("-----------------------");
+//		Collections.sort(testlist);
+//		for (int i =0; i<5;i++){
+//			testlist.get(i).print();
+
+//		}
+//	}
 }
