@@ -1,5 +1,4 @@
 package graph;
-import data.*;
 
 public class Graph {
 	private static final int MAX_AIRPORTS = 1000;

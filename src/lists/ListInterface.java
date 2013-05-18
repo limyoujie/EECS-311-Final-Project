@@ -1,12 +1,12 @@
 package lists;
 
-public interface ListInterface<T> {
+public interface ListInterface{
 	int size();
-	void add(T element);
-	boolean contains(T element);
-	boolean remove (T element);
-	T get(T element);
+	void add(FlightDataNode element);
+	boolean contains(FlightDataNode element);
+	boolean remove (FlightDataNode element);
+	FlightDataNode get(FlightDataNode element);
 	String toString();
 	void reset();
-	T getNext();
+	FlightDataNode getNext();
 }
